@@ -29,10 +29,7 @@ use Doctrine\ORM\Mapping as ORM;
         ),
         new Delete(
         )
-        ],
-    order:[
-        'codePostal','label'
-    ]
+        ]
     
 )]
 #[ApiFilter(SearchFilter::class, properties: ['codePostal' => 'exact', 'ville' => 'exact', 'departement.region' => 'exact', 'departement.label' => 'exact'])]
